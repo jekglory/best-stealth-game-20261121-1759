@@ -1,0 +1,35 @@
+/* LAMPLIGHT — A Quiet Heist: page chrome around the canvas. */
+* { box-sizing: border-box; }
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #0e0c0a;
+  color: #f2ead8;
+  font-family: Georgia, 'Times New Roman', serif;
+  overscroll-behavior: none;
+}
+.stage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px;
+}
+#game {
+  width: min(1280px, 96vw);
+  height: auto;
+  display: block;
+  border: 2px solid #4a4034;
+  background: #17130f;
+  image-rendering: auto;
+  cursor: crosshair;
+  touch-action: none;
+}
+.help {
+  margin: 8px 0 0;
+  font-size: 14px;
+  color: #b8ab8d;
+  text-align: center;
+}
+.help + .help { margin-top: 2px; }
